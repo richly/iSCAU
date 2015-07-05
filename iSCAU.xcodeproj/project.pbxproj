@@ -79,6 +79,9 @@
 		84C01A881B4929690017CC6D /* iSCAU */ = {
 			isa = PBXGroup;
 			children = (
+				84C01AB01B4952E00017CC6D /* Controller */,
+				84C01AAF1B4952D60017CC6D /* View */,
+				84C01AAE1B4952CF0017CC6D /* Model */,
 				84C01A8B1B4929690017CC6D /* AppDelegate.swift */,
 				84C01A901B4929690017CC6D /* ViewController.swift */,
 				84C01A921B4929690017CC6D /* Main.storyboard */,
@@ -113,6 +116,27 @@
 				84C01AA31B4929690017CC6D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84C01AAE1B4952CF0017CC6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84C01AAF1B4952D60017CC6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84C01AB01B4952E00017CC6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +437,7 @@
 				84C01AAA1B4929690017CC6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84C01AAB1B4929690017CC6D /* Build configuration list for PBXNativeTarget "iSCAUTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +446,7 @@
 				84C01AAD1B4929690017CC6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
