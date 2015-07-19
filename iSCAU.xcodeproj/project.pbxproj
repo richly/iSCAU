@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84AECFD11B529F41008A6D10 /* AppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AECFD01B529F41008A6D10 /* AppMacro.swift */; };
+		84AECFD31B529F59008A6D10 /* NotificationMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AECFD21B529F59008A6D10 /* NotificationMacro.swift */; };
+		84AECFD51B529F73008A6D10 /* VendorMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AECFD41B529F73008A6D10 /* VendorMacro.swift */; };
+		84AECFD71B529F83008A6D10 /* UtilsMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AECFD61B529F83008A6D10 /* UtilsMacro.swift */; };
 		84C01A8C1B4929690017CC6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C01A8B1B4929690017CC6D /* AppDelegate.swift */; };
 		84C01A8F1B4929690017CC6D /* iSCAU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C01A8D1B4929690017CC6D /* iSCAU.xcdatamodeld */; };
 		84C01A911B4929690017CC6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C01A901B4929690017CC6D /* ViewController.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84AECFD01B529F41008A6D10 /* AppMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMacro.swift; sourceTree = "<group>"; };
+		84AECFD21B529F59008A6D10 /* NotificationMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationMacro.swift; sourceTree = "<group>"; };
+		84AECFD41B529F73008A6D10 /* VendorMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorMacro.swift; sourceTree = "<group>"; };
+		84AECFD61B529F83008A6D10 /* UtilsMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsMacro.swift; sourceTree = "<group>"; };
 		84C01A861B4929690017CC6D /* iSCAU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSCAU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C01A8A1B4929690017CC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C01A8B1B4929690017CC6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84AB45721B52A0BC00AD33A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84AB45731B52A0CF00AD33A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		84AB45741B52A0D900AD33A7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		84C01A7D1B4929690017CC6D = {
 			isa = PBXGroup;
 			children = (
@@ -79,10 +108,14 @@
 		84C01A881B4929690017CC6D /* iSCAU */ = {
 			isa = PBXGroup;
 			children = (
-				84C01AB01B4952E00017CC6D /* Controller */,
-				84C01AAF1B4952D60017CC6D /* View */,
-				84C01AAE1B4952CF0017CC6D /* Model */,
-				84C01A8B1B4929690017CC6D /* AppDelegate.swift */,
+				84C01AB71B498C1A0017CC6D /* Appdelegates */,
+				84C01AB61B498B140017CC6D /* Sections */,
+				84C01AB51B498B080017CC6D /* Helpers */,
+				84C01AB41B498A710017CC6D /* Vendors */,
+				84C01AB31B498A610017CC6D /* General */,
+				84C01AB21B49891C0017CC6D /* Macro */,
+				84C01AB11B49890D0017CC6D /* Resources */,
+				84C01AAE1B4952CF0017CC6D /* Models */,
 				84C01A901B4929690017CC6D /* ViewController.swift */,
 				84C01A921B4929690017CC6D /* Main.storyboard */,
 				84C01A951B4929690017CC6D /* Images.xcassets */,
@@ -118,25 +151,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		84C01AAE1B4952CF0017CC6D /* Model */ = {
+		84C01AAE1B4952CF0017CC6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		84C01AAF1B4952D60017CC6D /* View */ = {
+		84C01AB11B49890D0017CC6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = View;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		84C01AB01B4952E00017CC6D /* Controller */ = {
+		84C01AB21B49891C0017CC6D /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				84AECFD01B529F41008A6D10 /* AppMacro.swift */,
+				84AECFD21B529F59008A6D10 /* NotificationMacro.swift */,
+				84AECFD41B529F73008A6D10 /* VendorMacro.swift */,
+				84AECFD61B529F83008A6D10 /* UtilsMacro.swift */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		84C01AB31B498A610017CC6D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				84AB45741B52A0D900AD33A7 /* Categories */,
+				84AB45731B52A0CF00AD33A7 /* Classes */,
+				84AB45721B52A0BC00AD33A7 /* Views */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		84C01AB41B498A710017CC6D /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Controller;
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		84C01AB51B498B080017CC6D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		84C01AB61B498B140017CC6D /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		84C01AB71B498C1A0017CC6D /* Appdelegates */ = {
+			isa = PBXGroup;
+			children = (
+				84C01A8B1B4929690017CC6D /* AppDelegate.swift */,
+			);
+			name = Appdelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AECFD71B529F83008A6D10 /* UtilsMacro.swift in Sources */,
+				84AECFD11B529F41008A6D10 /* AppMacro.swift in Sources */,
 				84C01A911B4929690017CC6D /* ViewController.swift in Sources */,
 				84C01A8C1B4929690017CC6D /* AppDelegate.swift in Sources */,
 				84C01A8F1B4929690017CC6D /* iSCAU.xcdatamodeld in Sources */,
+				84AECFD51B529F73008A6D10 /* VendorMacro.swift in Sources */,
+				84AECFD31B529F59008A6D10 /* NotificationMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
